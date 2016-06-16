@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 header {
   z-index: 2;
@@ -11,37 +12,52 @@ header {
   background-color: maroon;
   color: #fff;
   font-family: 'PT Sans', sans-serif;
-  transition-duration: 0.4s;
-  transition-timing-function: ease; }
+  
+  transition: {
+      duration: 0.4s;
+      timing-function: ease; 
+    } 
+}
 
 header.sticky {
   font-size: 24px;
   line-height: 48px;
   height: 48px;
-  text-align: center; }
+  text-align: center;
+}
 
 a {
   text-decoration: none;
-  color: black; }
+  color: black; 
+}
 
-.shirt-slider h1 {
-  margin: auto;
-  text-align: center; }
-.shirt-slider img {
-  display: block;
-  margin: 0 auto;
-  height: 40vw; }
-.shirt-slider p {
-  margin: 0 auto;
-  text-align: center;
-  width: 50%;
-  font-size: 17px; }
-.shirt-slider button {
-  display: block;
-  margin: 10px auto;
-  height: 40px;
-  width: 80px;
-  font-size: 18px; }
+.shirt-slider {
+  h1 {
+    margin: auto;
+    text-align: center; 
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    height: 40vw; 
+  }
+
+  p {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    font-size: 17px; 
+  }
+
+  button {
+    display: block;
+    margin: 10px auto;
+    height: 40px;
+    width: 80px;
+    font-size: 18px; 
+  }
+}
 
 #design {
   z-index: 1; }
@@ -78,35 +94,51 @@ a {
   overflow: scroll;
   left: 50%;
   width: 50%;
-  max-height: 30em; }
-  .wish-info h1 {
+  max-height: 30em; 
+
+  h1 {
     margin: auto;
-    text-align: center; }
-  .wish-info button {
+    text-align: center; 
+  }
+
+  button {
     display: block;
     margin: 20px auto;
     width: 30%;
     height: 20%;
-    font-size: 200%; }
-  .wish-info p {
+    font-size: 200%; 
+  }
+
+  p {
     text-align: center;
-    margin: 10% 20%; }
+    margin: 10% 20%; 
+  }
+}
 
 footer {
   text-align: center;
-  background-color: maroon; }
-  footer ul {
+  background-color: maroon; 
+
+  ul {
     margin: 0 auto;
-    padding: 0; }
-    footer ul li {
+    padding: 0; 
+
+    li {
       margin: auto;
       display: inline-block;
-      width: 30%; }
-      footer ul li address {
-        margin: 5%; }
-      footer ul li a {
+      width: 30%; 
+
+      address {
+        margin: 5%; 
+      }
+
+      a {
         display: block;
-        margin: 10% 0; }
+        margin: 10% 0; 
+      }
+    }
+  }
+}
 
 .social-icon {
   margin: 20%;
@@ -115,7 +147,8 @@ footer {
 
 .f-head {
   margin: auto;
-  font-size: 1.5em;
-  font-weight: bold; }
-
-/*# sourceMappingURL=style.css.map */
+  font: {
+    size: 1.5em;
+    weight: bold;
+  }  
+}
